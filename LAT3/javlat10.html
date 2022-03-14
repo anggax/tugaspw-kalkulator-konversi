@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Objek Dokumen</title>
+</head>
+<body>
+	<script language="javascript">
+		//<!-
+		function ubahwarnaLB(warna){
+			document.bgColor = warna;
+		}
+		function ubahwarnaLD(warna){
+			document.fgColor = warna;
+		}
+		//->
+	</script>
+	<h1>TES</h1>
+	<form>
+		<input type="button" value="Latar Belakang Hijau" onclick="ubahwarnaLB('green')">
+		<input type="button" value="Latar Belakang Putih" onclick="ubahwarnaLB('white')">
+		<input type="button" value="Teks Kuning" onclick="ubahwarnaLD('yellow')">
+		<input type="button" value="Teks Biru" onclick="ubahwarnaLD('blue')">
+	</form>
+</body>
+</html>

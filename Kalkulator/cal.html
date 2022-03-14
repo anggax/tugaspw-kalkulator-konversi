@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kalkulator Sederhana</title>
+	<link rel="stylesheet" type="text/css" href="cal.css">
+</head>
+<body>
+	<div class="center">
+		<h1>Count on Me</h1>
+		<form name="form">
+			<div class="container">
+				<label for="val1">Bilangan Pertama</label> <br>
+				<input type="text" name="val1">
+			</div>
+			<div class="container">
+				<label for="val2">Bilangan Kedua</label> <br>
+				<input type="text" name="val2">
+			</div>
+			<div class="container">
+				<label for="sum">Hasil</label> <br>
+				<input type="text" name="sum" disabled="true">			
+			</div>
+
+			<div class="buttonCal">
+				<input class="btn-green" type="reset" value="C" onclick="reset()">
+				<input class="btn-green" type="button" value="+" onclick="plus()">
+				<input class="btn-green" type="button" value="-" onclick="minus('-')">
+				<input class="btn-green" type="button" value="*" onclick="times('*')">
+				<input class="btn-green" type="button" value="/" onclick="devide('/')">
+			</div>
+			<div class="alrt" id="pesan">
+			</div>
+		</form>
+	</div>
+	<script src="js/cal.js"></script>
+</body>
+</html>
